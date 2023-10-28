@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02FE9819-BD08-4893-84E9-FCAC215E9210}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2B9C3266-0487-4FF4-A0A2-60170908520A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimeAPI.Core", "src\Anime.Core\AnimeAPI.Core.csproj", "{F5FD4C41-F634-43BB-8AEF-E985E0FF4870}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimeAPI", "src\AnimeAPI\AnimeAPI.csproj", "{BA950505-EF93-45FB-AA5C-DF771D4BAAC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimeApi.Api", "src\AnimeApi.Api\AnimeApi.Api.csproj", "{F548FF81-8FA3-4BAA-8A03-61139BDCFF99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimeDB.Adapter", "src\AnimeDB.Adapter\AnimeDB.Adapter.csproj", "{BC3C0156-6B6B-4910-957D-0B0F76053205}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimeImageAPI.Adapter", "src\AnimeImageAPI.Adapter\AnimeImageAPI.Adapter.csproj", "{CA1FF5A3-1D69-49BF-918A-BDD222AA6A59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA950505-EF93-45FB-AA5C-DF771D4BAAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA950505-EF93-45FB-AA5C-DF771D4BAAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA950505-EF93-45FB-AA5C-DF771D4BAAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA950505-EF93-45FB-AA5C-DF771D4BAAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5FD4C41-F634-43BB-8AEF-E985E0FF4870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5FD4C41-F634-43BB-8AEF-E985E0FF4870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5FD4C41-F634-43BB-8AEF-E985E0FF4870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5FD4C41-F634-43BB-8AEF-E985E0FF4870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC3C0156-6B6B-4910-957D-0B0F76053205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC3C0156-6B6B-4910-957D-0B0F76053205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC3C0156-6B6B-4910-957D-0B0F76053205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC3C0156-6B6B-4910-957D-0B0F76053205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1FF5A3-1D69-49BF-918A-BDD222AA6A59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1FF5A3-1D69-49BF-918A-BDD222AA6A59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1FF5A3-1D69-49BF-918A-BDD222AA6A59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1FF5A3-1D69-49BF-918A-BDD222AA6A59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F548FF81-8FA3-4BAA-8A03-61139BDCFF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F548FF81-8FA3-4BAA-8A03-61139BDCFF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F548FF81-8FA3-4BAA-8A03-61139BDCFF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F548FF81-8FA3-4BAA-8A03-61139BDCFF99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA950505-EF93-45FB-AA5C-DF771D4BAAC6} = {02FE9819-BD08-4893-84E9-FCAC215E9210}
+		{F5FD4C41-F634-43BB-8AEF-E985E0FF4870} = {02FE9819-BD08-4893-84E9-FCAC215E9210}
+		{BC3C0156-6B6B-4910-957D-0B0F76053205} = {02FE9819-BD08-4893-84E9-FCAC215E9210}
+		{CA1FF5A3-1D69-49BF-918A-BDD222AA6A59} = {02FE9819-BD08-4893-84E9-FCAC215E9210}
+		{F548FF81-8FA3-4BAA-8A03-61139BDCFF99} = {02FE9819-BD08-4893-84E9-FCAC215E9210}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {595644DB-F01E-4BF4-A976-33B2398C1CA4}
+	EndGlobalSection
+EndGlobal
