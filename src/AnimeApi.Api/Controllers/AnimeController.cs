@@ -5,7 +5,7 @@ namespace AnimeAPI.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
-  public class AnimeController : ControllerBase
+  public sealed class AnimeController : ControllerBase
   {
     private readonly IAnimeRepository _repository;
 

@@ -9,7 +9,17 @@
     }
   },
   "profiles": {
-    "AnimeAPI": {
+    "AnimeAPIGraphQL": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "graphql",
+      "applicationUrl": "https://localhost:7026;",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "AnimeAPIRest": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

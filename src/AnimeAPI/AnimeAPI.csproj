@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AnimeApi.Api\AnimeApi.Api.csproj" />
+    <ProjectReference Include="..\AnimeApi.GraphQL\AnimeApi.GraphQL\AnimeApi.GraphQL.csproj" />
     <ProjectReference Include="..\AnimeDB.Adapter\AnimeDB.Adapter.csproj" />
     <ProjectReference Include="..\Anime.Core\AnimeAPI.Core.csproj" />
   </ItemGroup>
