@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnimeApi.Adapter\AnimeApi.Adapter.csproj" />
+    <ProjectReference Include="..\AnimeImageAPI.Adapter\AnimeImageAPI.Adapter.csproj" />
+    <ProjectReference Include="..\AnimeProxy.Api\AnimeProxy.Api.csproj" />
+    <ProjectReference Include="..\AnimeProxy.Core\AnimeProxyApi.Core.csproj" />
+    <ProjectReference Include="..\AnimeProxy.GraphQL\AnimeProxy.GraphQL.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,8 +1,8 @@
-﻿using AnimeAPI.Core.Application.Ports;
-using AnimeAPI.Core.Domain.Entities;
-using AnimeAPI.Fixtures;
+﻿using AnimeImageAPI.Adapter.Fixtures;
+using AnimeProxyApi.Core.Application.Ports;
+using AnimeProxyApi.Core.Domain.Entities;
 
-namespace AnimeAPI.Repositories
+namespace AnimeImageAPI.Adapter.Repositories
 {
   internal sealed class ImageRepository : IImageRepository
   {

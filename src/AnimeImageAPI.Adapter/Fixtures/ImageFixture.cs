@@ -1,6 +1,8 @@
-﻿using AnimeAPI.Core.Domain.Entities;
+﻿
 
-namespace AnimeAPI.Fixtures
+using AnimeProxyApi.Core.Domain.Entities;
+
+namespace AnimeImageAPI.Adapter.Fixtures
 {
   internal static class ImageFixture
   {
