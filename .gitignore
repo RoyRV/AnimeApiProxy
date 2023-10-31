@@ -178,6 +178,8 @@ DocProject/Help/html
 
 # Click-Once directory
 publish/
+publish.zip
+publish.zip
 
 # Publish Web Output
 *.[Pp]ublish.xml

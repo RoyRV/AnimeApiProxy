@@ -1,0 +1,4 @@
+- Build : dotnet publish .\src\AnimeAPI\AnimeAPI.csproj -c Release -o .\Publish
+- Zip : Compress-Archive ".\Publish\*" ".\publish.zip"
+- Delete : del ".\Publish\"
+- Delete : del ".\publish.zip"
