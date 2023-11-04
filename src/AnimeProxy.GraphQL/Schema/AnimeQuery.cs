@@ -4,11 +4,12 @@ using AnimeProxyApi.Core.Domain.Entities;
 
 namespace AnimeProxy.GraphQL.Schema
 {
-  public sealed class Queries
+  [ExtendObjectType("Query")]
+  internal sealed class AnimeQuery
   {
     private readonly IAnimeRepository _repository;
 
-    public Queries(IAnimeRepository repository)
+    public AnimeQuery(IAnimeRepository repository)
     {
       _repository = repository;
     }

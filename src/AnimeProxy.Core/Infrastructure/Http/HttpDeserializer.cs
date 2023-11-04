@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using AnimeProxyApi.Core.Infrastructure.Exceptions;
+using System.Text.Json;
 
 namespace AnimeProxyApi.Core.Infrastructure.Http
 {

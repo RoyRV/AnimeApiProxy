@@ -1,5 +1,6 @@
 ﻿using AnimeApi.Adapter.ApiClient;
 using AnimeApi.Adapter.Repositories;
+using AnimeApi.Adapter.Resources;
 using AnimeProxyApi.Core.Application.Ports;
 using Microsoft.Extensions.DependencyInjection;
 

@@ -1,4 +1,4 @@
-﻿namespace AnimeApi.Adapter.ApiClient
+﻿namespace AnimeApi.Adapter.Resources
 {
   public class ApiSettings
   {

@@ -1,6 +1,6 @@
 
 using AnimeApi.Adapter;
-using AnimeApi.Adapter.ApiClient;
+using AnimeApi.Adapter.Resources;
 using AnimeProxy.Api;
 using AnimeProxy.GraphQL;
 using AnimeProxyApi.Core;

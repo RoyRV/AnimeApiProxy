@@ -1,4 +1,4 @@
-﻿using AnimeApi.Adapter.Fixtures;
+﻿using AnimeApi.Adapter.ApiClient;
 using AnimeProxyApi.Core.Application.Ports;
 using AnimeProxyApi.Core.Domain.Entities;
 
@@ -6,28 +6,16 @@ namespace AnimeApi.Adapter.Repositories
 {
   internal sealed class GenreRepository : IGenreRepository
   {
-    private readonly List<Genre> _list;
+    private IAnimeApiClient _apiClient;
 
-    public GenreRepository()
+    public GenreRepository(IAnimeApiClient apiClient)
     {
-      //_list = new()
-      //      {
-      //        GenreFixture.Comedy,
-      //        GenreFixture.Action,
-      //        GenreFixture.Adventure,
-      //        GenreFixture.Fantasy,
-      //        GenreFixture.Terror
-      //      };
+      _apiClient = apiClient;
     }
 
-    public Task<List<Genre>> Get()
+    public async Task<List<Genre>> GetGenresByIdsAsync(List<string> ids)
     {
-      return Task.FromResult(_list);
-    }
-
-    public Task<Genre?> Get(Guid id)
-    {
-      return Task.FromResult(_list.FirstOrDefault(x => x.Id == id));
+      return await _apiClient.GetGenresByIdsAsync(ids);
     }
   }
 }

@@ -7,7 +7,10 @@ namespace AnimeProxy.GraphQL
   {
     public static void AddAnimeGraphQL(this IServiceCollection serviceCollection)
     {
-      serviceCollection.AddGraphQLServer().AddQueryType<Queries>();
+      serviceCollection.AddGraphQLServer()
+      .AddQueryType(q => q.Name("Query"))
+        .AddType<AnimeQuery>()
+        .AddType<GenreQuery>();
     }
   }
 }
