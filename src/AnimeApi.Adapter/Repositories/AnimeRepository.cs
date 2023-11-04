@@ -1,4 +1,4 @@
-﻿using AnimeApi.Adapter.Fixtures;
+﻿using AnimeApi.Adapter.ApiClient;
 using AnimeProxyApi.Core.Application.Ports;
 using AnimeProxyApi.Core.Domain.Entities;
 
@@ -6,26 +6,21 @@ namespace AnimeApi.Adapter.Repositories
 {
   internal sealed class AnimeRepository : IAnimeRepository
   {
-    private readonly List<Anime> _list;
+    private IAnimeApiClient _apiClient;
 
-    public AnimeRepository()
+    public AnimeRepository(IAnimeApiClient apiClient)
     {
-      _list = new()
-            {
-               AnimeFixture.OnePiece,
-               AnimeFixture.DrStone,
-               AnimeFixture.AttackOnTitan
-            };
+      _apiClient = apiClient;
     }
 
-    public Task<List<Anime>> Get()
+    public async Task<List<Anime>> GetAsync()
     {
-      return Task.FromResult(_list);
+      return await _apiClient.GetAllAnimeAsync();
     }
 
     public Task<Anime?> Get(int id)
     {
-      return Task.FromResult(_list.FirstOrDefault(item => item.Id == id));
+      return null;
     }
   }
 }

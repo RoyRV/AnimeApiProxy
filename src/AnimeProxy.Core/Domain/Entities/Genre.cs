@@ -2,11 +2,11 @@
 {
   public class Genre
   {
-    public int Id { get; init; }
+    public Guid Id { get; init; }
 
     public string Name { get; init; }
 
-    public Genre(int id, string name)
+    public Genre(Guid id, string name)
     {
       Id = id;
       Name = name;

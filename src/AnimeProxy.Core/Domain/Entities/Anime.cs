@@ -1,9 +1,10 @@
-﻿namespace AnimeProxyApi.Core.Domain.Entities
+﻿using System.Text.Json.Serialization;
+
+namespace AnimeProxyApi.Core.Domain.Entities
 {
   public sealed class Anime
   {
-
-    public int Id { get; init; }
+    public Guid Id { get; init; }
 
     public string Title { get; init; }
 
@@ -13,20 +14,21 @@
 
     public DateTime? EndDate { get; init; }
 
-    public Image? Image { get; init; }
+    //public Image? Image { get; init; }
 
-    public List<Genre> Genres { get; init; }
+    //public List<Genre> Genres { get; init; }
 
-    public Anime(int id, string title, string description, DateTime startDate, List<Genre> genres)
+    [JsonConstructor]
+    public Anime(Guid id, string title, string description, DateTime startDate)
     {
       Id = id;
       Title = title;
       Description = description;
       StartDate = startDate;
-      Genres = genres;
+      //Genres = genres;
     }
 
-    public Anime(int id, string title, string description, DateTime startDate, List<Genre> genres, DateTime? endDate) : this(id, title, description, startDate, genres)
+    public Anime(Guid id, string title, string description, DateTime startDate, DateTime? endDate) : this(id, title, description, startDate)
     {
       EndDate = endDate;
     }

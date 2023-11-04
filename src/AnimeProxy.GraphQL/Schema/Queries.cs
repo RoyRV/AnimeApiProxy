@@ -15,7 +15,7 @@ namespace AnimeProxy.GraphQL.Schema
 
     public Task<List<Anime>> GetAnimes()
     {
-      return _repository.Get();
+      return _repository.GetAsync();
     }
   }
 }

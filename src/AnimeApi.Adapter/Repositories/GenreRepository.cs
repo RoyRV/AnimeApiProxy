@@ -10,14 +10,14 @@ namespace AnimeApi.Adapter.Repositories
 
     public GenreRepository()
     {
-      _list = new()
-            {
-              GenreFixture.Comedy,
-              GenreFixture.Action,
-              GenreFixture.Adventure,
-              GenreFixture.Fantasy,
-              GenreFixture.Terror
-            };
+      //_list = new()
+      //      {
+      //        GenreFixture.Comedy,
+      //        GenreFixture.Action,
+      //        GenreFixture.Adventure,
+      //        GenreFixture.Fantasy,
+      //        GenreFixture.Terror
+      //      };
     }
 
     public Task<List<Genre>> Get()
@@ -25,7 +25,7 @@ namespace AnimeApi.Adapter.Repositories
       return Task.FromResult(_list);
     }
 
-    public Task<Genre?> Get(int id)
+    public Task<Genre?> Get(Guid id)
     {
       return Task.FromResult(_list.FirstOrDefault(x => x.Id == id));
     }

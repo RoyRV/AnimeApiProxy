@@ -15,9 +15,9 @@ namespace AnimeProxy.Api.Controllers
     }
 
     [HttpGet]
-    public IActionResult Get()
+    public async Task<IActionResult> Get()
     {
-      var anime = _repository.Get();
+      var anime = await _repository.GetAsync();
       return Ok(anime);
     }
 
