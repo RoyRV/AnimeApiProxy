@@ -1,4 +1,5 @@
-﻿using AnimeProxy.GraphQL.Schema;
+﻿using AnimeProxy.GraphQL.Schema.Queries.Animes;
+using AnimeProxy.GraphQL.Schema.Queries.Genres;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AnimeProxy.GraphQL
@@ -10,6 +11,7 @@ namespace AnimeProxy.GraphQL
       serviceCollection.AddGraphQLServer()
       .AddQueryType(q => q.Name("Query"))
         .AddType<AnimeQuery>()
+        .AddTypeExtension<AnimeExtensions>()
         .AddType<GenreQuery>();
     }
   }

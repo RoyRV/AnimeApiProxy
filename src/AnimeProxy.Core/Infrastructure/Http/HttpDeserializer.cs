@@ -10,7 +10,7 @@ namespace AnimeProxyApi.Core.Infrastructure.Http
 
     public static T DeserializeResponse<T>(string json, string serviceName)
     {
-      try  
+      try
       {
         var apiResponse = JsonSerializer.Deserialize<HttpResponseResult<T>>(json, JsonSerializerOptions);
 
@@ -28,4 +28,3 @@ namespace AnimeProxyApi.Core.Infrastructure.Http
     }
   }
 }
-

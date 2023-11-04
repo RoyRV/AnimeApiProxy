@@ -14,4 +14,8 @@
     <ProjectReference Include="..\AnimeProxy.Core\AnimeProxyApi.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Schema\Mutations\" />
+  </ItemGroup>
+
 </Project>

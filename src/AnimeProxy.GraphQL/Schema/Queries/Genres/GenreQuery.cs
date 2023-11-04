@@ -1,7 +1,7 @@
 ﻿using AnimeProxyApi.Core.Application.Ports;
 using AnimeProxyApi.Core.Domain.Entities;
 
-namespace AnimeProxy.GraphQL.Schema
+namespace AnimeProxy.GraphQL.Schema.Queries.Genres
 {
   [ExtendObjectType("Query")]
   internal sealed class GenreQuery

@@ -5,7 +5,7 @@ namespace AnimeProxyApi.Core.Infrastructure.Http
   public abstract class BaseApiClient
   {
 
-    protected  IHttpClientFactory _httpClientFactory;
+    protected IHttpClientFactory _httpClientFactory;
 
     protected BaseApiClient(IHttpClientFactory httpClientFactory)
     {
