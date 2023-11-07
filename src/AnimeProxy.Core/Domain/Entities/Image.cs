@@ -2,15 +2,9 @@
 {
   public sealed class Image
   {
-    public int Id { get; init; }
-    public string Title { get; init; }
+    public Guid Id { get; init; }
+    public Guid AnimeId { get; init; }
+    public string Alt { get; init; }
     public Uri? Url { get; init; }
-
-    public Image(int id, string title, Uri? url)
-    {
-      Id = id;
-      Title = title;
-      Url = url;
-    }
   }
 }

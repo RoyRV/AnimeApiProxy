@@ -6,9 +6,10 @@ namespace AnimeProxy.GraphQL.Schema.Queries.Animes
   [ExtendObjectType(nameof(Anime))]
   internal class AnimeExtensions
   {
-    public Task<List<Genre>> GetGenres(
-      [Parent] Anime anime,
-     [Service] IGenreRepository repository) =>
+    public Task<List<Genre>> GetGenres([Parent] Anime anime, [Service] IGenreRepository repository) =>
       repository.GetGenresByIdsAsync(anime.Genres);
+
+    public Task<List<Image>> GetImages([Parent] Anime anime, [Service] IImageRepository repository) =>
+      repository.GetAsync(anime.Id);
   }
 }

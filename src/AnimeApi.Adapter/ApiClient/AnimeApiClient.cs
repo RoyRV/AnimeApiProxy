@@ -59,5 +59,27 @@ namespace AnimeApi.Adapter.ApiClient
         throw new DependencyException(ApiSettings.ClientName, message, ex);
       }
     }
+
+    public async Task<List<Image>> GetImagesByIdsAsync(Guid id)
+    {
+      var resource = string.Format($"{ApiClientResources.ANIME_IMAGE}", id);
+      try
+      {
+        var content = await Get(ApiSettings.ClientName, resource);
+
+        if (string.IsNullOrWhiteSpace(content))
+        {
+          return new List<Image>();
+        }
+
+        return HttpDeserializer.DeserializeResponse<List<Image>>(content, ApiSettings.ClientName);
+      }
+      catch (Exception ex)
+      {
+        var message = string.Format(HttpErrorTemplateMessages.HTTP_GET_ERROR, ApiSettings.ClientName, resource);
+
+        throw new DependencyException(ApiSettings.ClientName, message, ex);
+      }
+    }
   }
 }

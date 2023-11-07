@@ -7,5 +7,6 @@ namespace AnimeApi.Adapter.ApiClient
     Task<List<Anime>> GetAllAnimeAsync();
     Task<List<Genre>> GetAllGenreAsync();
     Task<List<Genre>> GetGenresByIdsAsync(List<string> ids);
+    Task<List<Image>> GetImagesByIdsAsync(Guid id);
   }
 }

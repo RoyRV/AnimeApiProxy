@@ -4,6 +4,6 @@ namespace AnimeProxyApi.Core.Application.Ports
 {
   public interface IImageRepository
   {
-    public Task<Image?> Get(int id);
+    Task<List<Image>> GetAsync(Guid animeId);
   }
 }

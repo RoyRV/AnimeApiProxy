@@ -12,6 +12,7 @@ namespace AnimeApi.Adapter
     {
       serviceCollection.AddScoped<IAnimeRepository, AnimeRepository>();
       serviceCollection.AddScoped<IGenreRepository, GenreRepository>();
+      serviceCollection.AddScoped<IImageRepository, ImageRepository>();
 
 
       serviceCollection.AddScoped<IAnimeApiClient, AnimeApiClient>();
