@@ -1,6 +1,4 @@
-﻿using System.Net.Http;
-
-namespace AnimeProxyApi.Core.Infrastructure.Http
+﻿namespace AnimeProxy.Shared.Http
 {
   public abstract class BaseApiClient
   {

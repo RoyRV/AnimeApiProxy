@@ -1,7 +1,7 @@
 ﻿using AnimeApi.Adapter.Resources;
+using AnimeProxy.Shared.Exceptions;
+using AnimeProxy.Shared.Http;
 using AnimeProxyApi.Core.Domain.Entities;
-using AnimeProxyApi.Core.Infrastructure.Exceptions;
-using AnimeProxyApi.Core.Infrastructure.Http;
 
 namespace AnimeApi.Adapter.ApiClient
 {
@@ -31,11 +31,6 @@ namespace AnimeApi.Adapter.ApiClient
 
         throw new DependencyException(ApiSettings.ClientName, message, ex);
       }
-    }
-
-    public Task<List<Genre>> GetAllGenreAsync()
-    {
-      throw new NotImplementedException();
     }
 
     public async Task<List<Genre>> GetGenresByIdsAsync(List<string> ids)

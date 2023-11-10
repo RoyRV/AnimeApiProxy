@@ -1,5 +1,5 @@
-﻿using AnimeProxyApi.Core.Infrastructure.Logger;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using AnimeProxy.Shared.Logger;
 
 namespace AnimeProxyApi.Core
 {

@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimeProxy.GraphQL", "src\A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimeProxy", "src\AnimeProxy\AnimeProxy.csproj", "{6DB6C54F-217E-4804-A4FC-3BEE06FE6819}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimeProxy.Shared", "src\AnimeProxy.Shared\AnimeProxy.Shared.csproj", "{89A69D69-5C6B-4904-BC00-61FE742AD6EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{6DB6C54F-217E-4804-A4FC-3BEE06FE6819}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DB6C54F-217E-4804-A4FC-3BEE06FE6819}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DB6C54F-217E-4804-A4FC-3BEE06FE6819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A69D69-5C6B-4904-BC00-61FE742AD6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A69D69-5C6B-4904-BC00-61FE742AD6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A69D69-5C6B-4904-BC00-61FE742AD6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A69D69-5C6B-4904-BC00-61FE742AD6EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{BC3C0156-6B6B-4910-957D-0B0F76053205} = {02FE9819-BD08-4893-84E9-FCAC215E9210}
 		{0681754D-69C6-41F4-AC43-726119A49F29} = {02FE9819-BD08-4893-84E9-FCAC215E9210}
 		{6DB6C54F-217E-4804-A4FC-3BEE06FE6819} = {02FE9819-BD08-4893-84E9-FCAC215E9210}
+		{89A69D69-5C6B-4904-BC00-61FE742AD6EB} = {02FE9819-BD08-4893-84E9-FCAC215E9210}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {595644DB-F01E-4BF4-A976-33B2398C1CA4}

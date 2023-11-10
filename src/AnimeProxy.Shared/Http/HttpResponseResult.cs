@@ -1,4 +1,4 @@
-﻿namespace AnimeProxyApi.Core.Infrastructure.Http
+﻿namespace AnimeProxy.Shared.Http
 {
   public class HttpResponseResult<T>
   {

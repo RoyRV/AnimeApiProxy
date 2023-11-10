@@ -1,9 +1,9 @@
 ﻿using Serilog;
 using Serilog.Events;
 
-namespace AnimeProxyApi.Core.Infrastructure.Logger
+namespace AnimeProxy.Shared.Logger
 {
-  internal static class LoggerConfigurationExtensions
+  public static class LoggerConfigurationExtensions
   {
     public static void SetupLoggerConfiguration(string appName) => Log.Logger = new LoggerConfiguration()
           .ConfigureBaseLogging(appName)

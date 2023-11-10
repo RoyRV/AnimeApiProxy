@@ -1,7 +1,7 @@
-﻿using AnimeProxyApi.Core.Infrastructure.Exceptions;
+﻿using AnimeProxy.Shared.Exceptions;
 using System.Text.Json;
 
-namespace AnimeProxyApi.Core.Infrastructure.Http
+namespace AnimeProxy.Shared.Http
 {
   public static class HttpDeserializer
   {

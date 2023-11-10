@@ -1,4 +1,4 @@
-﻿namespace AnimeProxyApi.Core.Infrastructure.Exceptions
+﻿namespace AnimeProxy.Shared.Exceptions
 {
   public class InvalidResponseException : Exception
   {

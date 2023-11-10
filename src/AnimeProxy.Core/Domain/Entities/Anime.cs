@@ -1,12 +1,9 @@
-﻿using HotChocolate;
-using HotChocolate.Types;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace AnimeProxyApi.Core.Domain.Entities
 {
   public sealed class Anime
   {
-    [GraphQLType(typeof(IdType))]
     public Guid Id { get; init; }
 
     public string Title { get; init; }
